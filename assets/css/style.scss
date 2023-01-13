@@ -1,0 +1,1361 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+$siva: #383838;
+$crvena :#cf2525;
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+p, a, h1, h2, h3, h4, h5, h6, li, input,textarea{
+	font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	letter-spacing: 1px;
+	font-weight: 1;
+}
+select,input,option,textarea{
+	outline: none;
+}
+select{
+	width: 180px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid $siva;
+    color: #383838;
+    line-height: 10px;
+    letter-spacing: 1px;
+	option{
+		height: 60px;
+	}
+}
+textarea{
+	height: 120px;
+	width: 300px;
+	resize: none;
+	padding: 5px;
+}
+@mixin flexCenter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.displayNone{
+	display: none;
+}
+.displayBlock{
+	display: block;
+}
+
+body{
+	background-color: $siva;
+}
+.wrapper{
+	width: 70%;
+	margin: 0px auto;
+}
+.pagination{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	a{
+		padding: 5px 5px 0 10px;
+		margin-right: 5px;
+		font-size: 20px;
+		color: $crvena;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+
+#survey{
+	width: 100%;
+	height: 290px;
+	padding-bottom: 20px;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.65) 100%),
+	url('../img/survey.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	.wrapper{
+		display: flex;
+		height: inherit;
+		justify-content: flex-start;
+		align-items: center;
+		#surveyBlock{
+			width: 40%;
+			height: 80%;
+			@include flexCenter;
+			p{
+				color: white;
+				font-weight: 800;
+				letter-spacing: 1px;
+				a{
+					color: $crvena;
+				}
+			}
+		}
+	}
+}
+.surveyForm{
+	h1{
+		text-transform: uppercase;
+		font-weight: 1;
+		padding-bottom: 8px;
+	}
+	div{
+		padding: 5px !important;
+	}
+}
+
+#poster{
+	width: 100%;
+	height: 100vh;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.65) 100%),
+	url('../img/poster.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: inset 0px -100px 170px 150px $siva;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	#posterTitle{
+		text-align: center;
+		margin-bottom: 60px;
+		@include flexCenter;
+		flex-direction: column;
+		h1{
+			color: white;
+		}
+		div{
+			width: 240px;
+			height: 37px;
+			@include flexCenter;
+			margin-top: 10px;
+			background-color: $crvena;
+			border-radius: 7px;
+			a{
+				text-transform: uppercase;
+				font-size: 13px;
+				line-height: 5px;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}
+#header{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	.wrapper{
+		display: flex;
+		justify-content: center;
+		div:nth-child(1), div:nth-child(3){
+			width: 20%;
+		}
+		div:nth-child(2){
+			width: 60%;
+		}
+		div{
+			display: flex;
+			ul{
+				width: 100%;
+				text-transform: uppercase;
+				a{
+					font-size: 13px;
+					font-weight: 900;
+				}
+			}
+		}
+		#nav{
+			@include flexCenter;
+			li{
+				margin: 20px;
+			}
+		}
+		div:last-child ul{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		#account{
+			@include flexCenter;
+			#user{
+				position: relative;
+				font-size: 13px;
+				color: $crvena;
+				font-weight: 900;
+				&:hover{
+					cursor: pointer;
+				}
+				#userNav{
+					display: none;
+					padding: 5px;
+					position: absolute;
+					top: 10px;
+					left: 0px;
+					border-radius: 10px;
+					li:first-child{
+						margin-top: 20px;
+					}
+					li{
+						height: 40px;
+						width: 90px;
+						display: flex;
+						align-items: center;
+						padding: 8px;
+						a{
+							color: $crvena;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#indexSlider{
+	width: 100%;
+	@include flexCenter;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 30px;
+	.indexSliderMovie img{
+		width: 100%;
+	}
+}
+
+#highlights{
+	margin: 80px 0px;
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		h2{
+			letter-spacing: 2px;
+			color: white;
+		}
+		#highlightsBlock{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			margin-top: 15px;
+			.highlight{
+				@include flexCenter;
+				width: 240px;
+				min-height: 90px;
+				background-color: grey;
+				border-radius: 3px;
+				.icons{
+					display: block;
+					width: 40px;
+					height: 38px;
+					background-image: url('../img/icons.png');
+					background-repeat: no-repeat;
+				}
+				p{
+					width: 202px;
+				}
+				.icons.icon-watched{
+					background-position: -5px -0px;
+				}
+				.icons.icon-seen{
+					background-position: -42px -0px;
+				}
+				.icons.icon-reviewed{
+					background-position: -78px -0px;
+				}
+			}
+			.highlight:hover{
+				background-color: $crvena;
+			}
+		}
+	}
+}
+
+
+.content{
+	background-color: white;
+	.wrapper{
+		display: flex;
+		justify-content: space-between;
+		hr{
+			margin-top: 15px;
+			width: 75%;
+			border: 1px $siva solid;
+			border-radius: 5px;
+		}
+		h2{
+			width: 100%;
+			text-align: left;
+			margin-bottom: 10px;
+			letter-spacing: 2px;
+		}
+		a{
+			color: $siva;
+		}
+		#reviews{
+			width: 100%;
+			padding-top: 50px;
+			padding-bottom: 80px;
+			h2,p{
+				color: $siva;
+			}
+			#reviewedMovies{
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				padding-top: 40px;
+				h4{
+					text-align:center;
+					margin-bottom: 20px;
+					text-transform: uppercase;
+					}
+				div{
+					@include flexCenter;
+					img{
+						width: 90px;
+						height: 128px;
+					}
+				}
+			}
+			#reviewBlock{
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: flex-start;
+				justify-content: center;
+				flex-direction: column;
+				.review{
+					display: flex;
+					width: 70%;
+					margin: 1% 0% 0% 2%;
+					padding: 15px;
+					border-bottom: 1px solid darkgrey;
+					img{
+						width: 148px;
+						height: 198px;
+						margin-right: 20px;
+						border-radius: 2px;
+					}
+					a{
+						color: #807e7e;;
+					}
+					#text{
+						line-height: 21px;
+						font-size: 14px;
+						margin-top: 5px;
+						color: black;
+						.more-text{
+							display: none;
+						}
+					}
+					h4{
+						font-size: 19px;
+						text-transform: uppercase;
+						margin-bottom: 18px;
+						color: black;
+					}
+					#time{
+						font-size: 12px;
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+		
+	}
+	#topReviewers{
+		width: 20%;
+		display: flex;
+		flex-direction: column;
+		padding-top: 150px;
+		h2{
+			font-size: 14px;
+			margin: 0px;
+		}
+		hr{
+			width: 100%;
+		}
+		#topReviewersBlock{
+			.userIcon{
+				display: flex;
+				align-items: center;
+				padding: 15px 0px;
+				border-bottom: 1px solid darkgrey; 
+				#userIconPhoto,img{
+					width: 40px;
+					height: 40px;
+					margin-right: 8px;
+					border-radius: 50%;
+				}
+				p{
+					font-size: 11px;
+				}
+			}
+		}
+	}
+}
+#addReviewBlock{
+	form{
+		select,h4{
+			margin-top: 20px;
+		}
+		textarea{
+			&::placeholder{
+				color: $crvena; 
+			}
+		}
+	}
+}
+#addReviewLink{
+	width: 100%;
+	@include flexCenter;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: $crvena;
+	p,a{
+		color: $siva;
+		padding: 10px;
+		background-color: white;
+		border-radius: 20px;
+	}
+	#addReview{
+		&:hover{
+			cursor: pointer;
+			background-color: $siva;
+			color: white;
+			transition: 0.2s color, 0.2s background-color;
+		}
+	}
+}
+
+#news{
+	padding-top: 70px;
+	padding-bottom: 20px;
+	@include flexCenter;
+	background-color: white;
+	p,img{
+		margin-bottom: 15px;
+	}
+	p{
+		color: #807e7e;
+	}
+	hr{
+		border: 0.5px solid #ededed;
+	}
+	#newsBlock{
+		display: flex;
+		justify-content: space-between;
+		margin: 4% 0%;
+		.news{
+			width: 282px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		img{
+			width: 282px;
+			height: 159px;
+			border-radius: 2px;
+		}
+		p{
+			font-size: 13px;
+			color: #807e7e;
+		}
+		h3{
+			color: $siva;
+			margin-bottom: 10px;
+		}
+	}
+}
+#news #newsBlock .news#reviewNews{
+	width: 100%;
+	flex-direction: row;
+	div{
+		margin: 0 3%;
+	}
+}
+
+#footer{
+	width: 100%;
+	height: 140px;
+	padding: 10px 0 30px 0;
+	@include flexCenter;
+	flex-direction: column;
+	background-color: $siva;
+	a,p{
+		color: grey;
+	}
+	#rowFirst{
+		width: 100%;
+		@include flexCenter;
+		div{
+			width: 90%;
+		}
+		ul{
+			@include flexCenter;
+			color: white;
+			h4,li{
+				text-align: center;
+				text-transform: capitalize;
+			}
+			li{
+				margin: 15px;
+
+			}
+		}
+	}
+}
+
+#movies{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: white;
+	h4{
+		margin-top: 50px;
+		color: black;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	#topMovies{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 50px;
+		#topMoviesBlock{
+			width: 346px;
+			height: 512px;
+		}
+		h4{
+			width: 15%;
+			color: $crvena;
+		}
+	}
+	.marginBorder{
+		margin: 30px 0;
+		border: 1px $crvena solid;
+		border-radius: 5px;
+	}
+	#manipulateMovies{
+		display: flex;
+		padding: 30px 0;
+		#sortFilterBlock{
+			display: flex;
+			width: 100%;
+			align-items: center;
+			select{
+				margin:10px;
+				padding: 5px;
+			}
+			i{
+				color: white;
+			}
+		}
+		#search{
+			display: flex;
+			margin: 10px;
+			padding: 5px;
+			border-bottom: 1px solid $siva;
+			#searchInput{
+				background-color: transparent;
+				border: none;
+				padding-left: 5px;
+				color: black;
+				placeholder{
+					color: black;
+				}
+			}
+			a{
+				display: flex;
+				align-items: center;
+				padding-right: 5px;
+				i{
+					color: black;
+				}
+			}
+		}
+	}
+	#moviesBlock{
+		width: 100%;	
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		.error{
+			padding: 70px 0px;
+			color: black;
+		}
+	}
+}
+.movie{
+	height: 260px;
+	width: 182px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	img{
+		height: 260px;
+		width: 182px;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+
+#infoBlock{
+		position: absolute;
+		width: 0%;
+		height: 0%;
+		visibility: hidden;
+		left: 0px;
+		background-color: rgba(0,0,0,0.8);
+		@include flexCenter;
+		hr{
+			border: 0.5px lightgrey solid;
+			border-radius: 5px;
+		}
+		ul{
+			margin-right: 20px;
+			p{
+				margin-bottom: 5px;
+			}
+			li{
+				margin-top: 3px;
+				color: black;
+			}
+		}
+		#genresBlock{
+			width:30%; 
+		}
+		.infoMovie{
+			width: 80%;
+			height: 550px;
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			background-color: white;
+			#infoClose{
+				display: flex;
+				position: absolute;
+				top: 30px;
+				left: 30px;
+				span{
+					background-color: black;
+				}
+			}
+			#infoDesc{
+				width: 70%;
+				height: 100%;
+				padding-left: 8%;
+				h2,p{
+					color: $siva;
+				}
+				h2{
+					padding: 50px 0 20px 0;
+				}
+				.crewBlock{
+				display: flex;
+				padding-top: 50px;	
+				}
+				#addToWatchlist{
+					p{
+						color: $crvena;
+					}
+					&:hover{
+						cursor: pointer;
+					}
+				}
+			}
+			#infoPhoto{
+				width: 30%;
+				display: flex;
+				justify-content: flex-end;
+				img{
+					width: 250px;
+					height: 346px;
+				}	
+			}
+		}
+}
+
+#watchlist{
+	min-height: 80vh;
+	padding-top: 50px;
+	padding-bottom: 80px;
+	background-color: white;
+	@include flexCenter;
+	h2,h4{
+		color: #383838;
+		text-align: center;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		letter-spacing: 2px;
+	}
+	.watchlistMovie{
+		width: 100%;
+		display: flex;
+		padding-bottom: 30px;
+		.watchlistPhoto{
+			width: 25%;
+			img{
+				width: 100%;
+			}
+			
+		}
+		.remove{
+			display: flex;
+			width: 150px;
+			margin-left: 50px;
+		}
+	}
+	#watchlistEmpty{
+		width: 40%;
+		margin: 0px auto;
+		padding-top: 30px;
+		a{
+			color: $crvena;
+		}
+	}
+	.remove{
+		.removeFromWatchlist{
+			display: flex;
+			span{
+				background-color: black;
+			}
+		}
+		p{
+			padding-left: 15px;
+		}
+	}
+}
+
+#profile{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-image: url('../img/indexSlider/4.jpg');
+	.wrapper{
+		border-radius: 10px;
+		h3,h2,h4{
+			color: white;
+		}
+		p,span{
+			color: lightgrey;
+		}
+		a{
+			color: $crvena;
+		}
+		#profileSummary{
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			background-color: $siva;
+			border-bottom: white solid 1px;
+			
+			#profileInfo{
+				@include flexCenter;
+				margin-left: 20px;
+				padding: 5px 0;
+				h3{
+					margin-left: 20px;
+				}
+				#profilePhoto{
+					width: 90px;
+					height: 90px;
+					img{
+						width: 90px;
+						height: 90px;
+						margin: 0 10px;
+						border-radius: 50%;
+					}
+					input[type=file]{
+						display: none;
+					}
+					#uploadPhotoBlock{
+						height: 90px;
+						@include flexCenter;
+						flex-direction: column;
+						border-radius: 50%;
+						background-color: $crvena;
+						label{
+							cursor: pointer;
+							font-family: 'Lato', sans-serif;
+							color: white;
+							text-align: center;
+						}
+						input[type=submit]{
+							width: 50px;
+							margin-top: 5px;
+							color: $siva;
+							font-size: 12px;
+							background-color: white;
+							border: none;
+							border-radius: 5px;
+							&:hover{
+								cursor: pointer;
+								color: lightgrey;
+								transition: color 0.15s;
+							}
+						}
+					}
+				}
+			}
+			#profileStats{
+				padding: 5px 0;
+				@include flexCenter;
+				ul{
+					display: flex;
+					li{
+						margin: 0px 10px;
+					}
+				}
+			}
+		}
+		#profileContent{
+			h3,h2,h4{
+				color: black;
+			}
+			p,span{
+				color:$siva;
+			}
+			p{
+				font-size: 13px;
+			}
+			a{
+				color: $crvena;
+			}
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			width: 100%;
+			padding: 40px 0;
+			@include flexCenter;
+			flex-direction: column;
+			background-color: white;
+			#favoriteMovies{
+				width: 70%;
+				background-color: $crvena;
+				ul{
+					width: 100%;
+					display: flex;
+					li{
+						width: 25%;
+						height: 270px;
+					}
+				}
+			}
+			#contentDetails{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				padding: 50px 0px;
+				h2{
+					width: 100%;
+					text-align: center;
+					text-transform: uppercase;
+					padding-bottom: 20px;
+					font-size: 19px;
+				}
+				#watchlistList{
+					flex-wrap: wrap;
+					width: 45%;
+					p{
+						padding: 15px;
+						text-align: center;
+					}
+					.movie{
+						margin: 0px auto;
+						border-bottom: 1px solid lightgrey;
+						img{
+							padding-bottom: 15px;
+						}
+					}
+				}
+				#reviewsList{
+					width: 45%;
+					flex-wrap: wrap;
+					div{
+						padding-bottom: 15px;
+						img{
+							width: 80px;
+							height: 111px;
+						}
+					}
+					.review{
+						border-bottom: 1px solid lightgrey;
+					}
+				}
+			}
+		}
+	}
+}
+
+#controlPanel{
+	padding: 80px 0;
+	.wrapper{
+		h2,h3{
+			width: 100%;
+			text-transform: uppercase;
+			padding-bottom: 15px;
+			color: white;
+		}
+		hr{
+			width: 100%;
+			margin-bottom: 15px;
+			border: none;
+			border-bottom: 2px solid $crvena;
+		}
+		#statsBlock{
+			@include flexCenter;
+			flex-wrap: wrap;
+			padding-bottom: 30px;
+			.stats{
+				@include flexCenter;
+				width: 190px;
+				height: 190px;
+				margin: 0 20px;
+				border-radius: 50%;
+				background-color: white;
+				border: 1px red solid;
+			}
+		}
+		#editBlock{
+			height: 200px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 40px 0;
+			h3{
+				width: 50%;
+				color: $crvena;
+				height: inherit;
+				@include flexCenter;
+				background-color: white;
+			}
+			h4{
+				color: white;
+			}
+			#updateMovie{
+				border: 1px $crvena solid;
+			}
+			#insertMovie,#deleteMovie{
+				border-top: 1px $crvena solid;
+				border-bottom: 1px $crvena solid;
+				border-right: 1px $crvena solid;
+			}
+			h3{
+				&:hover{
+					cursor: pointer;
+					background-color: $crvena !important;
+					color: white;
+					transition: 0.2s color, 0.2s background-color;
+
+				}
+			}
+			.editForm{
+				width: 48%;
+				display: flex;
+				flex-direction: column;
+				h3{
+					cursor: auto;
+					color: white;
+				}
+				form{
+					select{
+						border-bottom: 2px solid black;
+						option{
+							text-transform: capitalize;
+							height: 25px;
+						}
+					}
+				}
+			}
+		}
+		.errorsBlock{
+			background-color: white;
+		}
+	}
+}
+
+
+#author{
+	padding: 50px;
+	background-color: white;
+	.wrapper{
+		@include flexCenter;
+		img{
+			margin: 30px;
+		}
+		#authorDescription{
+			p{
+				color: $siva;
+			}
+			a{
+				color: $crvena;
+			}
+		}
+	}
+}
+
+.error{
+	width: 100% !important;
+	p{
+		color: $crvena;
+		font-size: 13px;
+	}
+}
+#signInBlock, #registerBlock, #addReviewBlock, #insertMovieBlock,#updateMovieBlock,#deleteMovieBlock,#contactBlock, #addMenuLinkBlock, #deleteMenuLinkBlock, #deleteUserBlock, #deleteReviewBlock{
+	width: 0%;
+	height: 0%;
+	@include flexCenter;
+	visibility: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.92);
+	.formClose{
+		display: flex;
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		span{
+			background-color: white;
+		}
+	}
+	form{
+		width: 450px;
+		min-height: 40vh;
+		@include flexCenter;
+		flex-direction: column;
+		background-color: white;
+		h4{
+			color: black;
+		}
+		div{
+			width: 100%;
+			@include flexCenter;
+			padding: 10px;
+			label{
+				width: 26%;
+				padding: 5px;
+				margin: 10px;
+			}
+			input{
+				width: 65%;
+				height: 30px;
+				padding: 5px;
+				margin: 10px;
+				border: none;
+				border-bottom: 2px solid black;
+				background-color: transparent;
+				color: $siva;
+				line-height: 10px;
+				letter-spacing: 1px;
+				&::placeholder{
+					color: $siva;
+				}
+			}
+		}
+		input[type=submit]{
+			width: 100px;
+			margin-top: 15px;
+			color: white;
+			font-size: 12px;
+			background-color: $siva;
+			border: none;
+			border-radius: 5px;
+			&:hover{
+				cursor: pointer;
+				color: lightgrey;
+				transition: color 0.3s;
+			}
+		}
+		div:last-child, div:first-child{
+			width: 100%;
+		}
+	}
+}
+#registerBlock{
+	form{
+		flex-direction: row;
+		flex-wrap: wrap;
+		div{
+			width: 48%;
+			input{
+				width: 100%;
+			}
+		}
+	}
+}
+#dugmeSignInBlock{
+	flex-direction: column;
+}
+.signInRegisterPage,#contactBlock{
+	visibility: visible !important;
+	width: 100% !important;
+	height: 100% !important;
+	flex-direction: column;
+	align-content: flex-start;
+	position: relative;
+	#header{
+		position: absolute;
+		top:0px;
+	}
+	.redirectSignInRegister{
+		width: 100% !important;
+		p,a{
+			font-size: 13.5px;
+		}
+		a{
+			color: $siva;
+		}
+	}
+}
+#contactBlock{
+	background-color: transparent;
+}
+.close{
+	width: 32px;
+	height: 27px;
+	@include flexCenter;
+	span{
+		display: block;
+		width: 2px;
+	}
+	span:nth-child(1){
+		transform: rotate(-43deg);
+		height: 27px;
+	}
+	span:nth-child(2){
+		transform: rotate(43deg);
+		height: 23px;
+	}
+	&:hover{
+		cursor: pointer;
+	}
+}
+.autocompleteBlockHolder{
+	position: relative;
+	.autocompleteBlock{
+		width: 65% !important;
+		height: 58px;
+		overflow: auto;
+		flex-wrap: wrap;
+		position: absolute;
+		top: 52px;
+		z-index: 1999;
+		background-color: white;
+		border-left: 1px $siva solid;
+		border-right: 1px $siva solid;
+		border-bottom: 1px $siva solid;
+		p{
+			width: 100%;
+			text-transform: capitalize;
+			border-bottom: 1px lightgrey solid;
+			&:hover{
+				cursor:pointer;
+			}
+		}
+	}
+}
+/*#deleteReviewBlock{
+	#reviewOptionsBlock{
+		@include flexCenter;
+		flex-direction: column;
+		width: 80%;
+		height: 350px;
+		overflow-y: scroll;
+		.reviewDelete{
+			width: 100%;
+		}
+	}
+}*/
+
+@media only screen and (max-width: 1320px){
+	body .wrapper{
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 1100px){
+	body #news .wrapper{
+		#newsBlock{
+			img{
+				width: 200px;
+				height: 113px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 950px){
+	body #highlights{
+		margin-top: 15px;
+		#highlightsBlock{
+			align-items: center;
+			flex-direction: column;
+			a{
+				margin: 7px 0;
+			}
+		}
+	}
+	body #news .wrapper{
+		#newsBlock{
+			flex-direction: column;
+			img{
+				width: 282px;
+				height: 159px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 850px){
+	#author .wrapper{
+		flex-direction: column;
+	}
+	.content .wrapper{
+		flex-direction: column;
+		#reviews {
+			width: 100%;
+			#reviewBlock .review{
+				width: 100%;
+			}
+		}
+		#topReviewers{
+			padding-top: 0px;
+			padding-bottom: 45px;
+			width: 100%;
+			#topReviewersBlock{
+				display: flex;
+				flex-wrap: wrap;
+				.userIcon{
+					width: 28%;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 800px){
+	.content .wrapper #reviews #reviewedMovies div{
+		img:nth-child(5),img:nth-child(6),img:nth-child(7),img:nth-child(8){
+			display: none;
+		}
+	}
+	body #header .wrapper{
+		width: 95%;
+		#nav{
+			li{
+				margin: 8px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 750px){
+	#movies .wrapper #moviesBlock .movie{
+		width: 150px;
+		height: 208px;
+		img{
+			width: 150px;
+			height: 208px;
+		}
+		
+	}
+}
+
+@media only screen and (max-width: 650px){
+	/*body #header .wrapper{
+		#nav{
+			display: none;
+		}
+		#navSmall{
+			@include flexCenter;
+			flex-direction: column;
+			ul{
+				position: absolute;
+				top: 55px;
+			}
+		}
+	}*/
+	#news #newsBlock .news#reviewNews{
+		flex-direction: column;
+	}
+	body{
+		#movies{
+			#topMovies{
+				#topMoviesBlock{
+					width: 185px ;
+					height: 276px;
+					img{
+						width: 185px;
+						height: 276px;
+					}
+				}
+			}
+		}
+	}
+	body{
+		#manipulateMovies{
+			#sortFilterBlock{
+				width: 58%;
+			}
+			#search{
+				width: 28%;
+				input{
+					width: 87%;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 600px){
+	#movies .wrapper #moviesBlock .movie{
+		width: 80px;
+		height: 111px;
+		img{
+			width: 80px;
+			height: 111px;
+		}
+	}
+	body #header .wrapper{
+		width: 100%;
+		img{
+			width: 100px;
+		}
+		#nav{
+			flex-direction: column;
+			margin-left: 8px;
+			li{
+				margin: 8px;
+				a{
+					font-size: 11px;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 550px){
+	#footer{
+		min-height:250px; 
+		#rowFirst ul{
+			flex-direction: column;
+			li{
+				margin: 5px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 480px){
+	body .review{
+		flex-direction: column;
+	}
+}

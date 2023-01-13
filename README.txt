@@ -1,0 +1,1 @@
+1 imena tabela negde su napisana kao 'moviePhoto' a treba moviephoto. ne cita online host drugacije

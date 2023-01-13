@@ -1,0 +1,1093 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+p, a, h1, h2, h3, h4, h5, h6, li, input, textarea {
+  font-family: 'Lato', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 1px;
+  font-weight: 1; }
+
+select, input, option, textarea {
+  outline: none; }
+
+select {
+  width: 180px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #383838;
+  color: #383838;
+  line-height: 10px;
+  letter-spacing: 1px; }
+  select option {
+    height: 60px; }
+
+textarea {
+  height: 120px;
+  width: 300px;
+  resize: none;
+  padding: 5px; }
+
+.displayNone {
+  display: none; }
+
+.displayBlock {
+  display: block; }
+
+body {
+  background-color: #383838; }
+
+.wrapper {
+  width: 70%;
+  margin: 0px auto; }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  width: 100%; }
+  .pagination a {
+    padding: 5px 5px 0 10px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: #cf2525; }
+    .pagination a:hover {
+      cursor: pointer; }
+
+#survey {
+  width: 100%;
+  height: 290px;
+  padding-bottom: 20px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.65) 100%), url("../img/survey.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  #survey .wrapper {
+    display: flex;
+    height: inherit;
+    justify-content: flex-start;
+    align-items: center; }
+    #survey .wrapper #surveyBlock {
+      width: 40%;
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #survey .wrapper #surveyBlock p {
+        color: white;
+        font-weight: 800;
+        letter-spacing: 1px; }
+        #survey .wrapper #surveyBlock p a {
+          color: #cf2525; }
+
+.surveyForm h1 {
+  text-transform: uppercase;
+  font-weight: 1;
+  padding-bottom: 8px; }
+.surveyForm div {
+  padding: 5px !important; }
+
+#poster {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.65) 100%), url("../img/poster.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px -100px 170px 150px #383838;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  #poster #posterTitle {
+    text-align: center;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    #poster #posterTitle h1 {
+      color: white; }
+    #poster #posterTitle div {
+      width: 240px;
+      height: 37px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      background-color: #cf2525;
+      border-radius: 7px; }
+      #poster #posterTitle div a {
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 5px;
+        letter-spacing: 1px; }
+
+#header {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center; }
+  #header .wrapper {
+    display: flex;
+    justify-content: center; }
+    #header .wrapper div:nth-child(1), #header .wrapper div:nth-child(3) {
+      width: 20%; }
+    #header .wrapper div:nth-child(2) {
+      width: 60%; }
+    #header .wrapper div {
+      display: flex; }
+      #header .wrapper div ul {
+        width: 100%;
+        text-transform: uppercase; }
+        #header .wrapper div ul a {
+          font-size: 13px;
+          font-weight: 900; }
+    #header .wrapper #nav {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #header .wrapper #nav li {
+        margin: 20px; }
+    #header .wrapper div:last-child ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    #header .wrapper #account {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #header .wrapper #account #user {
+        position: relative;
+        font-size: 13px;
+        color: #cf2525;
+        font-weight: 900; }
+        #header .wrapper #account #user:hover {
+          cursor: pointer; }
+        #header .wrapper #account #user #userNav {
+          display: none;
+          padding: 5px;
+          position: absolute;
+          top: 10px;
+          left: 0px;
+          border-radius: 10px; }
+          #header .wrapper #account #user #userNav li:first-child {
+            margin-top: 20px; }
+          #header .wrapper #account #user #userNav li {
+            height: 40px;
+            width: 90px;
+            display: flex;
+            align-items: center;
+            padding: 8px; }
+            #header .wrapper #account #user #userNav li a {
+              color: #cf2525; }
+
+#indexSlider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px; }
+  #indexSlider .indexSliderMovie img {
+    width: 100%; }
+
+#highlights {
+  margin: 80px 0px; }
+  #highlights .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    #highlights .wrapper h2 {
+      letter-spacing: 2px;
+      color: white; }
+    #highlights .wrapper #highlightsBlock {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px; }
+      #highlights .wrapper #highlightsBlock .highlight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        min-height: 90px;
+        background-color: grey;
+        border-radius: 3px; }
+        #highlights .wrapper #highlightsBlock .highlight .icons {
+          display: block;
+          width: 40px;
+          height: 38px;
+          background-image: url("../img/icons.png");
+          background-repeat: no-repeat; }
+        #highlights .wrapper #highlightsBlock .highlight p {
+          width: 202px; }
+        #highlights .wrapper #highlightsBlock .highlight .icons.icon-watched {
+          background-position: -5px -0px; }
+        #highlights .wrapper #highlightsBlock .highlight .icons.icon-seen {
+          background-position: -42px -0px; }
+        #highlights .wrapper #highlightsBlock .highlight .icons.icon-reviewed {
+          background-position: -78px -0px; }
+      #highlights .wrapper #highlightsBlock .highlight:hover {
+        background-color: #cf2525; }
+
+.content {
+  background-color: white; }
+  .content .wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .content .wrapper hr {
+      margin-top: 15px;
+      width: 75%;
+      border: 1px #383838 solid;
+      border-radius: 5px; }
+    .content .wrapper h2 {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 10px;
+      letter-spacing: 2px; }
+    .content .wrapper a {
+      color: #383838; }
+    .content .wrapper #reviews {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 80px; }
+      .content .wrapper #reviews h2, .content .wrapper #reviews p {
+        color: #383838; }
+      .content .wrapper #reviews #reviewedMovies {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 40px; }
+        .content .wrapper #reviews #reviewedMovies h4 {
+          text-align: center;
+          margin-bottom: 20px;
+          text-transform: uppercase; }
+        .content .wrapper #reviews #reviewedMovies div {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .content .wrapper #reviews #reviewedMovies div img {
+            width: 90px;
+            height: 128px; }
+      .content .wrapper #reviews #reviewBlock {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column; }
+        .content .wrapper #reviews #reviewBlock .review {
+          display: flex;
+          width: 70%;
+          margin: 1% 0% 0% 2%;
+          padding: 15px;
+          border-bottom: 1px solid darkgrey; }
+          .content .wrapper #reviews #reviewBlock .review img {
+            width: 148px;
+            height: 198px;
+            margin-right: 20px;
+            border-radius: 2px; }
+          .content .wrapper #reviews #reviewBlock .review a {
+            color: #807e7e; }
+          .content .wrapper #reviews #reviewBlock .review #text {
+            line-height: 21px;
+            font-size: 14px;
+            margin-top: 5px;
+            color: black; }
+            .content .wrapper #reviews #reviewBlock .review #text .more-text {
+              display: none; }
+          .content .wrapper #reviews #reviewBlock .review h4 {
+            font-size: 19px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+            color: black; }
+          .content .wrapper #reviews #reviewBlock .review #time {
+            font-size: 12px;
+            margin-top: 5px; }
+  .content #topReviewers {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px; }
+    .content #topReviewers h2 {
+      font-size: 14px;
+      margin: 0px; }
+    .content #topReviewers hr {
+      width: 100%; }
+    .content #topReviewers #topReviewersBlock .userIcon {
+      display: flex;
+      align-items: center;
+      padding: 15px 0px;
+      border-bottom: 1px solid darkgrey; }
+      .content #topReviewers #topReviewersBlock .userIcon #userIconPhoto, .content #topReviewers #topReviewersBlock .userIcon img {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        border-radius: 50%; }
+      .content #topReviewers #topReviewersBlock .userIcon p {
+        font-size: 11px; }
+
+#addReviewBlock form select, #addReviewBlock form h4 {
+  margin-top: 20px; }
+#addReviewBlock form textarea::placeholder {
+  color: #cf2525; }
+
+#addReviewLink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #cf2525; }
+  #addReviewLink p, #addReviewLink a {
+    color: #383838;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px; }
+  #addReviewLink #addReview:hover {
+    cursor: pointer;
+    background-color: #383838;
+    color: white;
+    transition: 0.2s color, 0.2s background-color; }
+
+#news {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; }
+  #news p, #news img {
+    margin-bottom: 15px; }
+  #news p {
+    color: #807e7e; }
+  #news hr {
+    border: 0.5px solid #ededed; }
+  #news #newsBlock {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0%; }
+    #news #newsBlock .news {
+      width: 282px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    #news #newsBlock img {
+      width: 282px;
+      height: 159px;
+      border-radius: 2px; }
+    #news #newsBlock p {
+      font-size: 13px;
+      color: #807e7e; }
+    #news #newsBlock h3 {
+      color: #383838;
+      margin-bottom: 10px; }
+
+#news #newsBlock .news#reviewNews {
+  width: 100%;
+  flex-direction: row; }
+  #news #newsBlock .news#reviewNews div {
+    margin: 0 3%; }
+
+#footer {
+  width: 100%;
+  height: 140px;
+  padding: 10px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #383838; }
+  #footer a, #footer p {
+    color: grey; }
+  #footer #rowFirst {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #footer #rowFirst div {
+      width: 90%; }
+    #footer #rowFirst ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white; }
+      #footer #rowFirst ul h4, #footer #rowFirst ul li {
+        text-align: center;
+        text-transform: capitalize; }
+      #footer #rowFirst ul li {
+        margin: 15px; }
+
+#movies {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white; }
+  #movies h4 {
+    margin-top: 50px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  #movies #topMovies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px; }
+    #movies #topMovies #topMoviesBlock {
+      width: 346px;
+      height: 512px; }
+    #movies #topMovies h4 {
+      width: 15%;
+      color: #cf2525; }
+  #movies .marginBorder {
+    margin: 30px 0;
+    border: 1px #cf2525 solid;
+    border-radius: 5px; }
+  #movies #manipulateMovies {
+    display: flex;
+    padding: 30px 0; }
+    #movies #manipulateMovies #sortFilterBlock {
+      display: flex;
+      width: 100%;
+      align-items: center; }
+      #movies #manipulateMovies #sortFilterBlock select {
+        margin: 10px;
+        padding: 5px; }
+      #movies #manipulateMovies #sortFilterBlock i {
+        color: white; }
+    #movies #manipulateMovies #search {
+      display: flex;
+      margin: 10px;
+      padding: 5px;
+      border-bottom: 1px solid #383838; }
+      #movies #manipulateMovies #search #searchInput {
+        background-color: transparent;
+        border: none;
+        padding-left: 5px;
+        color: black; }
+        #movies #manipulateMovies #search #searchInput placeholder {
+          color: black; }
+      #movies #manipulateMovies #search a {
+        display: flex;
+        align-items: center;
+        padding-right: 5px; }
+        #movies #manipulateMovies #search a i {
+          color: black; }
+  #movies #moviesBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    #movies #moviesBlock .error {
+      padding: 70px 0px;
+      color: black; }
+
+.movie {
+  height: 260px;
+  width: 182px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; }
+  .movie img {
+    height: 260px;
+    width: 182px; }
+    .movie img:hover {
+      cursor: pointer; }
+
+#infoBlock {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  visibility: hidden;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #infoBlock hr {
+    border: 0.5px lightgrey solid;
+    border-radius: 5px; }
+  #infoBlock ul {
+    margin-right: 20px; }
+    #infoBlock ul p {
+      margin-bottom: 5px; }
+    #infoBlock ul li {
+      margin-top: 3px;
+      color: black; }
+  #infoBlock #genresBlock {
+    width: 30%; }
+  #infoBlock .infoMovie {
+    width: 80%;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: white; }
+    #infoBlock .infoMovie #infoClose {
+      display: flex;
+      position: absolute;
+      top: 30px;
+      left: 30px; }
+      #infoBlock .infoMovie #infoClose span {
+        background-color: black; }
+    #infoBlock .infoMovie #infoDesc {
+      width: 70%;
+      height: 100%;
+      padding-left: 8%; }
+      #infoBlock .infoMovie #infoDesc h2, #infoBlock .infoMovie #infoDesc p {
+        color: #383838; }
+      #infoBlock .infoMovie #infoDesc h2 {
+        padding: 50px 0 20px 0; }
+      #infoBlock .infoMovie #infoDesc .crewBlock {
+        display: flex;
+        padding-top: 50px; }
+      #infoBlock .infoMovie #infoDesc #addToWatchlist p {
+        color: #cf2525; }
+      #infoBlock .infoMovie #infoDesc #addToWatchlist:hover {
+        cursor: pointer; }
+    #infoBlock .infoMovie #infoPhoto {
+      width: 30%;
+      display: flex;
+      justify-content: flex-end; }
+      #infoBlock .infoMovie #infoPhoto img {
+        width: 250px;
+        height: 346px; }
+
+#watchlist {
+  min-height: 80vh;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #watchlist h2, #watchlist h4 {
+    color: #383838;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    letter-spacing: 2px; }
+  #watchlist .watchlistMovie {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px; }
+    #watchlist .watchlistMovie .watchlistPhoto {
+      width: 25%; }
+      #watchlist .watchlistMovie .watchlistPhoto img {
+        width: 100%; }
+    #watchlist .watchlistMovie .remove {
+      display: flex;
+      width: 150px;
+      margin-left: 50px; }
+  #watchlist #watchlistEmpty {
+    width: 40%;
+    margin: 0px auto;
+    padding-top: 30px; }
+    #watchlist #watchlistEmpty a {
+      color: #cf2525; }
+  #watchlist .remove .removeFromWatchlist {
+    display: flex; }
+    #watchlist .remove .removeFromWatchlist span {
+      background-color: black; }
+  #watchlist .remove p {
+    padding-left: 15px; }
+
+#profile {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("../img/indexSlider/4.jpg"); }
+  #profile .wrapper {
+    border-radius: 10px; }
+    #profile .wrapper h3, #profile .wrapper h2, #profile .wrapper h4 {
+      color: white; }
+    #profile .wrapper p, #profile .wrapper span {
+      color: lightgrey; }
+    #profile .wrapper a {
+      color: #cf2525; }
+    #profile .wrapper #profileSummary {
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: #383838;
+      border-bottom: white solid 1px; }
+      #profile .wrapper #profileSummary #profileInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        padding: 5px 0; }
+        #profile .wrapper #profileSummary #profileInfo h3 {
+          margin-left: 20px; }
+        #profile .wrapper #profileSummary #profileInfo #profilePhoto {
+          width: 90px;
+          height: 90px; }
+          #profile .wrapper #profileSummary #profileInfo #profilePhoto img {
+            width: 90px;
+            height: 90px;
+            margin: 0 10px;
+            border-radius: 50%; }
+          #profile .wrapper #profileSummary #profileInfo #profilePhoto input[type=file] {
+            display: none; }
+          #profile .wrapper #profileSummary #profileInfo #profilePhoto #uploadPhotoBlock {
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 50%;
+            background-color: #cf2525; }
+            #profile .wrapper #profileSummary #profileInfo #profilePhoto #uploadPhotoBlock label {
+              cursor: pointer;
+              font-family: 'Lato', sans-serif;
+              color: white;
+              text-align: center; }
+            #profile .wrapper #profileSummary #profileInfo #profilePhoto #uploadPhotoBlock input[type=submit] {
+              width: 50px;
+              margin-top: 5px;
+              color: #383838;
+              font-size: 12px;
+              background-color: white;
+              border: none;
+              border-radius: 5px; }
+              #profile .wrapper #profileSummary #profileInfo #profilePhoto #uploadPhotoBlock input[type=submit]:hover {
+                cursor: pointer;
+                color: lightgrey;
+                transition: color 0.15s; }
+      #profile .wrapper #profileSummary #profileStats {
+        padding: 5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #profile .wrapper #profileSummary #profileStats ul {
+          display: flex; }
+          #profile .wrapper #profileSummary #profileStats ul li {
+            margin: 0px 10px; }
+    #profile .wrapper #profileContent {
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      width: 100%;
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: white; }
+      #profile .wrapper #profileContent h3, #profile .wrapper #profileContent h2, #profile .wrapper #profileContent h4 {
+        color: black; }
+      #profile .wrapper #profileContent p, #profile .wrapper #profileContent span {
+        color: #383838; }
+      #profile .wrapper #profileContent p {
+        font-size: 13px; }
+      #profile .wrapper #profileContent a {
+        color: #cf2525; }
+      #profile .wrapper #profileContent #favoriteMovies {
+        width: 70%;
+        background-color: #cf2525; }
+        #profile .wrapper #profileContent #favoriteMovies ul {
+          width: 100%;
+          display: flex; }
+          #profile .wrapper #profileContent #favoriteMovies ul li {
+            width: 25%;
+            height: 270px; }
+      #profile .wrapper #profileContent #contentDetails {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0px; }
+        #profile .wrapper #profileContent #contentDetails h2 {
+          width: 100%;
+          text-align: center;
+          text-transform: uppercase;
+          padding-bottom: 20px;
+          font-size: 19px; }
+        #profile .wrapper #profileContent #contentDetails #watchlistList {
+          flex-wrap: wrap;
+          width: 45%; }
+          #profile .wrapper #profileContent #contentDetails #watchlistList p {
+            padding: 15px;
+            text-align: center; }
+          #profile .wrapper #profileContent #contentDetails #watchlistList .movie {
+            margin: 0px auto;
+            border-bottom: 1px solid lightgrey; }
+            #profile .wrapper #profileContent #contentDetails #watchlistList .movie img {
+              padding-bottom: 15px; }
+        #profile .wrapper #profileContent #contentDetails #reviewsList {
+          width: 45%;
+          flex-wrap: wrap; }
+          #profile .wrapper #profileContent #contentDetails #reviewsList div {
+            padding-bottom: 15px; }
+            #profile .wrapper #profileContent #contentDetails #reviewsList div img {
+              width: 80px;
+              height: 111px; }
+          #profile .wrapper #profileContent #contentDetails #reviewsList .review {
+            border-bottom: 1px solid lightgrey; }
+
+#controlPanel {
+  padding: 80px 0; }
+  #controlPanel .wrapper h2, #controlPanel .wrapper h3 {
+    width: 100%;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: white; }
+  #controlPanel .wrapper hr {
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #cf2525; }
+  #controlPanel .wrapper #statsBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px; }
+    #controlPanel .wrapper #statsBlock .stats {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 190px;
+      height: 190px;
+      margin: 0 20px;
+      border-radius: 50%;
+      background-color: white;
+      border: 1px red solid; }
+  #controlPanel .wrapper #editBlock {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0; }
+    #controlPanel .wrapper #editBlock h3 {
+      width: 50%;
+      color: #cf2525;
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white; }
+    #controlPanel .wrapper #editBlock h4 {
+      color: white; }
+    #controlPanel .wrapper #editBlock #updateMovie {
+      border: 1px #cf2525 solid; }
+    #controlPanel .wrapper #editBlock #insertMovie, #controlPanel .wrapper #editBlock #deleteMovie {
+      border-top: 1px #cf2525 solid;
+      border-bottom: 1px #cf2525 solid;
+      border-right: 1px #cf2525 solid; }
+    #controlPanel .wrapper #editBlock h3:hover {
+      cursor: pointer;
+      background-color: #cf2525 !important;
+      color: white;
+      transition: 0.2s color, 0.2s background-color; }
+    #controlPanel .wrapper #editBlock .editForm {
+      width: 48%;
+      display: flex;
+      flex-direction: column; }
+      #controlPanel .wrapper #editBlock .editForm h3 {
+        cursor: auto;
+        color: white; }
+      #controlPanel .wrapper #editBlock .editForm form select {
+        border-bottom: 2px solid black; }
+        #controlPanel .wrapper #editBlock .editForm form select option {
+          text-transform: capitalize;
+          height: 25px; }
+  #controlPanel .wrapper .errorsBlock {
+    background-color: white; }
+
+#author {
+  padding: 50px;
+  background-color: white; }
+  #author .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #author .wrapper img {
+      margin: 30px; }
+    #author .wrapper #authorDescription p {
+      color: #383838; }
+    #author .wrapper #authorDescription a {
+      color: #cf2525; }
+
+.error {
+  width: 100% !important; }
+  .error p {
+    color: #cf2525;
+    font-size: 13px; }
+
+#signInBlock, #registerBlock, #addReviewBlock, #insertMovieBlock, #updateMovieBlock, #deleteMovieBlock, #contactBlock, #addMenuLinkBlock, #deleteMenuLinkBlock, #deleteUserBlock, #deleteReviewBlock {
+  width: 0%;
+  height: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.92); }
+  #signInBlock .formClose, #registerBlock .formClose, #addReviewBlock .formClose, #insertMovieBlock .formClose, #updateMovieBlock .formClose, #deleteMovieBlock .formClose, #contactBlock .formClose, #addMenuLinkBlock .formClose, #deleteMenuLinkBlock .formClose, #deleteUserBlock .formClose, #deleteReviewBlock .formClose {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    right: 40px; }
+    #signInBlock .formClose span, #registerBlock .formClose span, #addReviewBlock .formClose span, #insertMovieBlock .formClose span, #updateMovieBlock .formClose span, #deleteMovieBlock .formClose span, #contactBlock .formClose span, #addMenuLinkBlock .formClose span, #deleteMenuLinkBlock .formClose span, #deleteUserBlock .formClose span, #deleteReviewBlock .formClose span {
+      background-color: white; }
+  #signInBlock form, #registerBlock form, #addReviewBlock form, #insertMovieBlock form, #updateMovieBlock form, #deleteMovieBlock form, #contactBlock form, #addMenuLinkBlock form, #deleteMenuLinkBlock form, #deleteUserBlock form, #deleteReviewBlock form {
+    width: 450px;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white; }
+    #signInBlock form h4, #registerBlock form h4, #addReviewBlock form h4, #insertMovieBlock form h4, #updateMovieBlock form h4, #deleteMovieBlock form h4, #contactBlock form h4, #addMenuLinkBlock form h4, #deleteMenuLinkBlock form h4, #deleteUserBlock form h4, #deleteReviewBlock form h4 {
+      color: black; }
+    #signInBlock form div, #registerBlock form div, #addReviewBlock form div, #insertMovieBlock form div, #updateMovieBlock form div, #deleteMovieBlock form div, #contactBlock form div, #addMenuLinkBlock form div, #deleteMenuLinkBlock form div, #deleteUserBlock form div, #deleteReviewBlock form div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; }
+      #signInBlock form div label, #registerBlock form div label, #addReviewBlock form div label, #insertMovieBlock form div label, #updateMovieBlock form div label, #deleteMovieBlock form div label, #contactBlock form div label, #addMenuLinkBlock form div label, #deleteMenuLinkBlock form div label, #deleteUserBlock form div label, #deleteReviewBlock form div label {
+        width: 26%;
+        padding: 5px;
+        margin: 10px; }
+      #signInBlock form div input, #registerBlock form div input, #addReviewBlock form div input, #insertMovieBlock form div input, #updateMovieBlock form div input, #deleteMovieBlock form div input, #contactBlock form div input, #addMenuLinkBlock form div input, #deleteMenuLinkBlock form div input, #deleteUserBlock form div input, #deleteReviewBlock form div input {
+        width: 65%;
+        height: 30px;
+        padding: 5px;
+        margin: 10px;
+        border: none;
+        border-bottom: 2px solid black;
+        background-color: transparent;
+        color: #383838;
+        line-height: 10px;
+        letter-spacing: 1px; }
+        #signInBlock form div input::placeholder, #registerBlock form div input::placeholder, #addReviewBlock form div input::placeholder, #insertMovieBlock form div input::placeholder, #updateMovieBlock form div input::placeholder, #deleteMovieBlock form div input::placeholder, #contactBlock form div input::placeholder, #addMenuLinkBlock form div input::placeholder, #deleteMenuLinkBlock form div input::placeholder, #deleteUserBlock form div input::placeholder, #deleteReviewBlock form div input::placeholder {
+          color: #383838; }
+    #signInBlock form input[type=submit], #registerBlock form input[type=submit], #addReviewBlock form input[type=submit], #insertMovieBlock form input[type=submit], #updateMovieBlock form input[type=submit], #deleteMovieBlock form input[type=submit], #contactBlock form input[type=submit], #addMenuLinkBlock form input[type=submit], #deleteMenuLinkBlock form input[type=submit], #deleteUserBlock form input[type=submit], #deleteReviewBlock form input[type=submit] {
+      width: 100px;
+      margin-top: 15px;
+      color: white;
+      font-size: 12px;
+      background-color: #383838;
+      border: none;
+      border-radius: 5px; }
+      #signInBlock form input[type=submit]:hover, #registerBlock form input[type=submit]:hover, #addReviewBlock form input[type=submit]:hover, #insertMovieBlock form input[type=submit]:hover, #updateMovieBlock form input[type=submit]:hover, #deleteMovieBlock form input[type=submit]:hover, #contactBlock form input[type=submit]:hover, #addMenuLinkBlock form input[type=submit]:hover, #deleteMenuLinkBlock form input[type=submit]:hover, #deleteUserBlock form input[type=submit]:hover, #deleteReviewBlock form input[type=submit]:hover {
+        cursor: pointer;
+        color: lightgrey;
+        transition: color 0.3s; }
+    #signInBlock form div:last-child, #signInBlock form div:first-child, #registerBlock form div:last-child, #registerBlock form div:first-child, #addReviewBlock form div:last-child, #addReviewBlock form div:first-child, #insertMovieBlock form div:last-child, #insertMovieBlock form div:first-child, #updateMovieBlock form div:last-child, #updateMovieBlock form div:first-child, #deleteMovieBlock form div:last-child, #deleteMovieBlock form div:first-child, #contactBlock form div:last-child, #contactBlock form div:first-child, #addMenuLinkBlock form div:last-child, #addMenuLinkBlock form div:first-child, #deleteMenuLinkBlock form div:last-child, #deleteMenuLinkBlock form div:first-child, #deleteUserBlock form div:last-child, #deleteUserBlock form div:first-child, #deleteReviewBlock form div:last-child, #deleteReviewBlock form div:first-child {
+      width: 100%; }
+
+#registerBlock form {
+  flex-direction: row;
+  flex-wrap: wrap; }
+  #registerBlock form div {
+    width: 48%; }
+    #registerBlock form div input {
+      width: 100%; }
+
+#dugmeSignInBlock {
+  flex-direction: column; }
+
+.signInRegisterPage, #contactBlock {
+  visibility: visible !important;
+  width: 100% !important;
+  height: 100% !important;
+  flex-direction: column;
+  align-content: flex-start;
+  position: relative; }
+  .signInRegisterPage #header, #contactBlock #header {
+    position: absolute;
+    top: 0px; }
+  .signInRegisterPage .redirectSignInRegister, #contactBlock .redirectSignInRegister {
+    width: 100% !important; }
+    .signInRegisterPage .redirectSignInRegister p, .signInRegisterPage .redirectSignInRegister a, #contactBlock .redirectSignInRegister p, #contactBlock .redirectSignInRegister a {
+      font-size: 13.5px; }
+    .signInRegisterPage .redirectSignInRegister a, #contactBlock .redirectSignInRegister a {
+      color: #383838; }
+
+#contactBlock {
+  background-color: transparent; }
+
+.close {
+  width: 32px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .close span {
+    display: block;
+    width: 2px; }
+  .close span:nth-child(1) {
+    transform: rotate(-43deg);
+    height: 27px; }
+  .close span:nth-child(2) {
+    transform: rotate(43deg);
+    height: 23px; }
+  .close:hover {
+    cursor: pointer; }
+
+.autocompleteBlockHolder {
+  position: relative; }
+  .autocompleteBlockHolder .autocompleteBlock {
+    width: 65% !important;
+    height: 58px;
+    overflow: auto;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 52px;
+    z-index: 1999;
+    background-color: white;
+    border-left: 1px #383838 solid;
+    border-right: 1px #383838 solid;
+    border-bottom: 1px #383838 solid; }
+    .autocompleteBlockHolder .autocompleteBlock p {
+      width: 100%;
+      text-transform: capitalize;
+      border-bottom: 1px lightgrey solid; }
+      .autocompleteBlockHolder .autocompleteBlock p:hover {
+        cursor: pointer; }
+
+/*#deleteReviewBlock{
+	#reviewOptionsBlock{
+		@include flexCenter;
+		flex-direction: column;
+		width: 80%;
+		height: 350px;
+		overflow-y: scroll;
+		.reviewDelete{
+			width: 100%;
+		}
+	}
+}*/
+@media only screen and (max-width: 1320px) {
+  body .wrapper {
+    width: 80%; } }
+@media only screen and (max-width: 1100px) {
+  body #news .wrapper #newsBlock img {
+    width: 200px;
+    height: 113px; } }
+@media only screen and (max-width: 950px) {
+  body #highlights {
+    margin-top: 15px; }
+    body #highlights #highlightsBlock {
+      align-items: center;
+      flex-direction: column; }
+      body #highlights #highlightsBlock a {
+        margin: 7px 0; }
+
+  body #news .wrapper #newsBlock {
+    flex-direction: column; }
+    body #news .wrapper #newsBlock img {
+      width: 282px;
+      height: 159px; } }
+@media only screen and (max-width: 850px) {
+  #author .wrapper {
+    flex-direction: column; }
+
+  .content .wrapper {
+    flex-direction: column; }
+    .content .wrapper #reviews {
+      width: 100%; }
+      .content .wrapper #reviews #reviewBlock .review {
+        width: 100%; }
+    .content .wrapper #topReviewers {
+      padding-top: 0px;
+      padding-bottom: 45px;
+      width: 100%; }
+      .content .wrapper #topReviewers #topReviewersBlock {
+        display: flex;
+        flex-wrap: wrap; }
+        .content .wrapper #topReviewers #topReviewersBlock .userIcon {
+          width: 28%; } }
+@media only screen and (max-width: 800px) {
+  .content .wrapper #reviews #reviewedMovies div img:nth-child(5), .content .wrapper #reviews #reviewedMovies div img:nth-child(6), .content .wrapper #reviews #reviewedMovies div img:nth-child(7), .content .wrapper #reviews #reviewedMovies div img:nth-child(8) {
+    display: none; }
+
+  body #header .wrapper {
+    width: 95%; }
+    body #header .wrapper #nav li {
+      margin: 8px; } }
+@media only screen and (max-width: 750px) {
+  #movies .wrapper #moviesBlock .movie {
+    width: 150px;
+    height: 208px; }
+    #movies .wrapper #moviesBlock .movie img {
+      width: 150px;
+      height: 208px; } }
+@media only screen and (max-width: 650px) {
+  /*body #header .wrapper{
+  	#nav{
+  		display: none;
+  	}
+  	#navSmall{
+  		@include flexCenter;
+  		flex-direction: column;
+  		ul{
+  			position: absolute;
+  			top: 55px;
+  		}
+  	}
+  }*/
+  #news #newsBlock .news#reviewNews {
+    flex-direction: column; }
+
+  body #movies #topMovies #topMoviesBlock {
+    width: 185px;
+    height: 276px; }
+    body #movies #topMovies #topMoviesBlock img {
+      width: 185px;
+      height: 276px; }
+
+  body #manipulateMovies #sortFilterBlock {
+    width: 58%; }
+  body #manipulateMovies #search {
+    width: 28%; }
+    body #manipulateMovies #search input {
+      width: 87%; } }
+@media only screen and (max-width: 600px) {
+  #movies .wrapper #moviesBlock .movie {
+    width: 80px;
+    height: 111px; }
+    #movies .wrapper #moviesBlock .movie img {
+      width: 80px;
+      height: 111px; }
+
+  body #header .wrapper {
+    width: 100%; }
+    body #header .wrapper img {
+      width: 100px; }
+    body #header .wrapper #nav {
+      flex-direction: column;
+      margin-left: 8px; }
+      body #header .wrapper #nav li {
+        margin: 8px; }
+        body #header .wrapper #nav li a {
+          font-size: 11px; } }
+@media only screen and (max-width: 550px) {
+  #footer {
+    min-height: 250px; }
+    #footer #rowFirst ul {
+      flex-direction: column; }
+      #footer #rowFirst ul li {
+        margin: 5px; } }
+@media only screen and (max-width: 480px) {
+  body .review {
+    flex-direction: column; } }
+
+/*# sourceMappingURL=style.css.map */
